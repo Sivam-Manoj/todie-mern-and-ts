@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #fff;
+    background: #333;
+}
+
+.App {
+    max-width: 728px;
+    margin: 4rem auto;
+    padding: 0 1rem;
+}
+
+.App > h1 {
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.Card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #444;
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid #333333;
+    flex-wrap: wrap;
+}
+
+.Card--text h1 {
+    color: #ff9900;
+    margin-bottom: 0.5rem;
+}
+
+.Card--button {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.Card--button button {
+    background: #f5f6f7;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.Card--button__delete {
+    border: 1px solid #ca0000;
+    color: #ca0000;
+}
+
+.Card--button__done {
+    border: 1px solid #00aa69;
+    color: #00aa69;
+    margin-right: 1rem;
+}
+
+.Form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: #444;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.Form > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.Form input {
+    background: #f5f6f7;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ff9900;
+    border-radius: 10px;
+    display: block;
+    margin: 0.3rem 0;
+}
+
+.Form label {
+}
+
+.Form button {
+    background: #ff9900;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    border: none;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: #777 !important;
+}
+
+.hide-button {
+    display: none;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .App {
+        margin: 3rem auto;
+    }
+}
+
+@media (max-width: 992px) {
+    .App {
+        margin: 2rem auto;
+    }
+
+    .Card--button button {
+        padding: 0.3rem 0.8rem;
+    }
+
+    .Form input {
+        padding: 0.4rem 0.8rem;
+    }
+
+    .Form button {
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .App {
+        margin: 1.5rem auto;
+    }
+
+    .Card {
+        padding: 0.4rem 0.8rem;
+    }
+
+    .Card--button button {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .Form input {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.9rem;
+    }
+
+    .Form button {
+        padding: 0.3rem 0.6rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .App {
+        margin: 1rem auto;
+    }
+
+    .Card {
+        padding: 0.3rem 0.6rem;
+    }
+
+    .Card--button button {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.8rem;
+    }
+
+    .Form input {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.8rem;
+    }
+
+    .Form button {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.8rem;
+        margin-left: 40%;
+    }
+}
+
+@media (max-width: 400px) {
+    .App {
+        margin: 0.5rem auto;
+        padding: 0;
+    }
+
+    .Card {
+        padding: 0.2rem 0.4rem;
+    }
+
+    .Card--button button {
+        padding: 0.1rem 0.3rem;
+        font-size: 0.7rem;
+    }
+
+    .Form input {
+        padding: 0.1rem 0.3rem;
+        font-size: 0.7rem;
+    }
+
+    .Form button {
+        padding: 0.1rem 0.3rem;
+        font-size: 0.7rem;
+    }
+}
